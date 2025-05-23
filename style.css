@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #ffffff;
+    padding: 0px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+  }
+
+.weather-input{
+    width: 20%;
+    position: fixed;
+    inset: 0;
+    background: #40cff3;
+    padding: .5rem .5rem;
+  }
+  .weather-input i{
+    font-size: 40px;
+  }
+
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: .5rem .5rem;
+    padding: 0px;
+}
+
+input{
+    background: #f8f8f8;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline:none;
+    width: 100%;
+    height: 15%;
+    font-size: 15px;
+}
+
+.input-group .converter,
+.input-group .timezone,
+.input-group .search {
+    display: block;
+    position: static;
+    margin: 1px auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sun span, .min-max-temps span{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.weather-info{
+    width: 80%;
+    position: fixed;
+    inset: 0;
+    margin-left: auto;
+    padding: 2rem;
+    background: #e7e6e6;
+    overflow: auto;
+}
+.weather-data{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-auto-flow: row;
+    row-gap: .5rem;
+    column-gap: 10px;
+}
+.weather-data div{
+  height: 150px;
+  width: 85%;
+  display: grid;
+  align-items: left;
+  justify-items: center;
+  text-align: center;
+  background-color: #40cff3;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.weather-data i{
+    font-size: 25px;
+}
+.weatherIcon{
+    height: 25%;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    margin: 1rem auto;
+    display: block;
+}
